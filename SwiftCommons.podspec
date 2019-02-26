@@ -7,36 +7,36 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'SwiftCommons'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SwiftCommons.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/boganov@gmail.com/SwiftCommons'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'boganov@gmail.com' => 'boganov@gmail.com' }
-  s.source           = { :git => 'https://github.com/boganov@gmail.com/SwiftCommons.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'SwiftCommons/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SwiftCommons' => ['SwiftCommons/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.name             = 'SwiftCommons'
+    s.version          = '0.1.0'
+    s.summary          = 'This is a project to keep all files that are useful when you start creating a new application.'
+    
+    # This description is used to generate tags and improve search results.
+    #   * Think: What does it do? Why did you write it? What is the focus?
+    #   * Try to keep it short, snappy and to the point.
+    #   * Write the description between the DESC delimiters below.
+    #   * Finally, don't worry about the indent, CocoaPods strips it!
+    
+    s.description      = <<-DESC
+    Nothing to write here actually. Summary says it all: it is just a project to keep all files that are useful when you start creating a new application.
+    DESC
+    
+    s.homepage         = 'https://github.com/boganov/SwiftCommons'
+    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
+    s.author           = { 'Evgeny Boganov' => 'boganov@gmail.com' }
+    s.source           = { :git => 'https://github.com/boganov/SwiftCommons.git', :tag => s.version.to_s }
+    s.social_media_url = 'https://twitter.com/boganov'
+    s.swift_version = '4.2'
+    s.ios.deployment_target = '9.3'
+    
+    s.source_files = 'SwiftCommons/Classes/**/*'
+    
+    # s.resource_bundles = {
+    #   'SwiftCommons' => ['SwiftCommons/Assets/*.png']
+    # }
+    
+    # s.public_header_files = 'Pod/Classes/**/*.h'
+    # s.frameworks = 'UIKit', 'MapKit'
+    # s.dependency 'AFNetworking', '~> 2.3'
 end

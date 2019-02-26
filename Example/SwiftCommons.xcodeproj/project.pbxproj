@@ -13,14 +13,14 @@
 
 /* Begin PBXFileReference section */
 		2D13F6D16C800E41B80B81EF /* Pods-SwiftCommons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCommons_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCommons_Tests/Pods-SwiftCommons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4B1141D4B27DFE6A68DB677F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4B1141D4B27DFE6A68DB677F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		52E2FA13226AEFEF3044ACA9 /* Pods-SwiftCommons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCommons_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCommons_Tests/Pods-SwiftCommons_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5F6E7FBFD47E565933B5282C /* Pods_SwiftCommons_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCommons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* SwiftCommons_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCommons_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		92D7F26CDABBB982E0B932BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D9E443B4F2A2439D107187C5 /* SwiftCommons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftCommons.podspec; path = ../SwiftCommons.podspec; sourceTree = "<group>"; };
+		92D7F26CDABBB982E0B932BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D9E443B4F2A2439D107187C5 /* SwiftCommons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftCommons.podspec; path = ../SwiftCommons.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +130,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;

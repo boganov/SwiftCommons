@@ -1,0 +1,16 @@
+PODS:
+  - SwiftCommons (0.1.0)
+
+DEPENDENCIES:
+  - SwiftCommons (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftCommons:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftCommons: 2c445c3905335c9f51d8634cc7e185d9b17ab7ab
+
+PODFILE CHECKSUM: 98ea7bdc7f1b57844840af393e922951e28c3a00
+
+COCOAPODS: 1.5.3
