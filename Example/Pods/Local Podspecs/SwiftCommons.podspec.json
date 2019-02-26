@@ -20,5 +20,6 @@
   "platforms": {
     "ios": "9.3"
   },
-  "source_files": "SwiftCommons/Classes/**/*"
+  "source_files": "SwiftCommons/Classes/**/*",
+  "resources": "SwiftCommons/Assets/*"
 }

@@ -41,7 +41,7 @@ class CustomBackButton: UIBarButtonItem {
     
     func prepare() {
         let button = RectInsetsOverrideButton(type: .system)
-        let image = customImage ?? UIImage(named: "nav_back")
+        let image = customImage ?? UIImage(named: "sc_nav_back")
         button.setImage(image?.withRenderingMode(.alwaysTemplate), for: .normal)
         button.tintColor = customColor ?? UIColor.init(hex: "0x007aff")
         button.alignmentRectInsetsOverride = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: -8)
