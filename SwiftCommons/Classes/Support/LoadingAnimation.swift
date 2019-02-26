@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftGifOrigin
 
 enum LoadingAnimationPosition: String {
     case center

@@ -13,7 +13,6 @@
 		5CB9339622252491005211EE /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB9338422252491005211EE /* KeychainPasswordItem.swift */; };
 		5CB9339722252491005211EE /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB9338522252491005211EE /* HTTPMethod.swift */; };
 		5CB9339822252491005211EE /* LoadingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB9338622252491005211EE /* LoadingAnimation.swift */; };
-		5CB9339922252491005211EE /* UserCredentialsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB9338722252491005211EE /* UserCredentialsService.swift */; };
 		5CB9339A22252491005211EE /* RectInsetsOverrideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB9338822252491005211EE /* RectInsetsOverrideButton.swift */; };
 		5CB9339B22252491005211EE /* BackButton.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB9338A22252491005211EE /* BackButton.xcassets */; };
 		5CB9339C22252491005211EE /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB9338B22252491005211EE /* CustomBackButton.swift */; };
@@ -50,7 +49,6 @@
 		5CB9338422252491005211EE /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		5CB9338522252491005211EE /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		5CB9338622252491005211EE /* LoadingAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAnimation.swift; sourceTree = "<group>"; };
-		5CB9338722252491005211EE /* UserCredentialsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCredentialsService.swift; sourceTree = "<group>"; };
 		5CB9338822252491005211EE /* RectInsetsOverrideButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectInsetsOverrideButton.swift; sourceTree = "<group>"; };
 		5CB9338A22252491005211EE /* BackButton.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BackButton.xcassets; sourceTree = "<group>"; };
 		5CB9338B22252491005211EE /* CustomBackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 				5CB9338422252491005211EE /* KeychainPasswordItem.swift */,
 				5CB9338522252491005211EE /* HTTPMethod.swift */,
 				5CB9338622252491005211EE /* LoadingAnimation.swift */,
-				5CB9338722252491005211EE /* UserCredentialsService.swift */,
 				5CB9338822252491005211EE /* RectInsetsOverrideButton.swift */,
 				5CB9338922252491005211EE /* BackButton */,
 			);
@@ -377,7 +374,6 @@
 				5CB933A322252491005211EE /* UIApplication+.swift in Sources */,
 				5CB933A122252491005211EE /* UIViewController+.swift in Sources */,
 				5CB9339722252491005211EE /* HTTPMethod.swift in Sources */,
-				5CB9339922252491005211EE /* UserCredentialsService.swift in Sources */,
 				5CB9339F22252491005211EE /* UIView+.swift in Sources */,
 				5CB9339D22252491005211EE /* AbstractCoordinator.swift in Sources */,
 				5CB933A222252491005211EE /* UIButton+.swift in Sources */,
