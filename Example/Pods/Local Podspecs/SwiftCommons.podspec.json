@@ -1,22 +1,24 @@
 {
   "name": "SwiftCommons",
   "version": "0.1.0",
-  "summary": "A short description of SwiftCommons.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/boganov@gmail.com/SwiftCommons",
+  "summary": "This is a project to keep all files that are useful when you start creating a new application.",
+  "description": "Nothing to write here actually. Summary says it all: it is just a project to keep all files that are useful when you start creating a new application.",
+  "homepage": "https://github.com/boganov/SwiftCommons",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "boganov@gmail.com": "boganov@gmail.com"
+    "Evgeny Boganov": "boganov@gmail.com"
   },
   "source": {
-    "git": "https://github.com/boganov@gmail.com/SwiftCommons.git",
+    "git": "https://github.com/boganov/SwiftCommons.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/boganov",
+  "swift_version": "4.2",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.3"
   },
   "source_files": "SwiftCommons/Classes/**/*"
 }
