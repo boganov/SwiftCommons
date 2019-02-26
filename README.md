@@ -22,7 +22,7 @@ pod 'SwiftCommons'
 
 ## Author
 
-boganov@gmail.com, boganov@gmail.com
+Evgeny Boganov, boganov@gmail.com
 
 ## License
 
