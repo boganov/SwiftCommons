@@ -28,7 +28,7 @@ import UIKit
 // MARK: - ContentViewController
 
 extension UIViewController {
-    var contentViewController: UIViewController {
+    public var contentViewController: UIViewController {
         if let navcon = self as? UINavigationController {
             return navcon.visibleViewController ?? self
         } else if let tabcon = self as? UITabBarController {
@@ -42,20 +42,20 @@ extension UIViewController {
 // MARK: - Keyboard
 
 extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
+    public func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
     
     @objc
-    func dismissKeyboard() {
+    public func dismissKeyboard() {
         view.endEditing(true)
     }
 }
 
 extension UIViewController {
-    func generateSpacerNavigationForItems(items: [UIBarButtonItem]?, width: CGFloat = 8) -> [UIBarButtonItem]? {
+    public func generateSpacerNavigationForItems(items: [UIBarButtonItem]?, width: CGFloat = 8) -> [UIBarButtonItem]? {
         if #available(iOS 11.0, *) {
             guard var items = items, items.count > 0 else {
                 return nil
@@ -69,7 +69,7 @@ extension UIViewController {
         return items
     }
     
-    func fixNavigationItemsPosition() {
+    public func fixNavigationItemsPosition() {
         navigationItem.setLeftBarButtonItems(generateSpacerNavigationForItems(items: navigationItem.leftBarButtonItems, width: 8), animated: false)
         navigationItem.setRightBarButtonItems(generateSpacerNavigationForItems(items: navigationItem.rightBarButtonItems, width: 8), animated: false)
     }

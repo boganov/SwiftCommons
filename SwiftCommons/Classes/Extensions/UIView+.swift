@@ -33,54 +33,7 @@ extension UIView {
 
 extension UIView {
     
-    func fillSuperview() {
-        anchor(top: superview?.topAnchor, leading: superview?.leadingAnchor, bottom: superview?.bottomAnchor, trailing: superview?.trailingAnchor)
-    }
-    
-    func anchorSize(to view: UIView) {
-        translatesAutoresizingMaskIntoConstraints = false
-        widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
-    }
-    
-    func anchorSize(to size: CGSize) {
-        translatesAutoresizingMaskIntoConstraints = false
-        widthAnchor.constraint(equalToConstant: size.width).isActive = true
-        heightAnchor.constraint(equalToConstant: size.height).isActive = true
-    }
-    
-    func anchor(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailing: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
-        translatesAutoresizingMaskIntoConstraints = false
-        
-        if let top = top {
-            topAnchor.constraint(equalTo: top, constant: padding.top).isActive = true
-        }
-        
-        if let leading = leading {
-            leadingAnchor.constraint(equalTo: leading, constant: padding.left).isActive = true
-        }
-        
-        if let bottom = bottom {
-            bottomAnchor.constraint(equalTo: bottom, constant: -padding.bottom).isActive = true
-        }
-        
-        if let trailing = trailing {
-            trailingAnchor.constraint(equalTo: trailing, constant: -padding.right).isActive = true
-        }
-        
-        if size.width != 0 {
-            widthAnchor.constraint(equalToConstant: size.width).isActive = true
-        }
-        
-        if size.height != 0 {
-            heightAnchor.constraint(equalToConstant: size.height).isActive = true
-        }
-    }
-}
-
-extension UIView {
-    
-    var safeTopAnchor: NSLayoutYAxisAnchor {
+    public var safeTopAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11.0, *) {
             return self.safeAreaLayoutGuide.topAnchor
         } else {
@@ -88,7 +41,7 @@ extension UIView {
         }
     }
     
-    var safeLeftAnchor: NSLayoutXAxisAnchor {
+    public var safeLeftAnchor: NSLayoutXAxisAnchor {
         if #available(iOS 11.0, *) {
             return self.safeAreaLayoutGuide.leftAnchor
         } else {
@@ -96,7 +49,7 @@ extension UIView {
         }
     }
     
-    var safeRightAnchor: NSLayoutXAxisAnchor {
+    public var safeRightAnchor: NSLayoutXAxisAnchor {
         if #available(iOS 11.0, *) {
             return self.safeAreaLayoutGuide.rightAnchor
         } else {
@@ -104,7 +57,7 @@ extension UIView {
         }
     }
     
-    var safeBottomAnchor: NSLayoutYAxisAnchor {
+    public var safeBottomAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11.0, *) {
             return self.safeAreaLayoutGuide.bottomAnchor
         } else {
@@ -114,7 +67,7 @@ extension UIView {
 }
 
 extension UIView {
-    func setShadow(radius: CGFloat = 2.0) {
+    public func setShadow(radius: CGFloat = 2.0) {
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 0)
         self.layer.masksToBounds = false
@@ -124,7 +77,7 @@ extension UIView {
 }
 
 extension UIView {
-    static func loadFromXib<T>(withOwner: Any? = nil, options: [UINib.OptionsKey: Any]? = nil) -> T where T: UIView {
+    public static func loadFromXib<T>(withOwner: Any? = nil, options: [UINib.OptionsKey: Any]? = nil) -> T where T: UIView {
         let bundle = Bundle(for: self)
         let nib = UINib(nibName: "\(self)", bundle: bundle)
         
@@ -136,7 +89,7 @@ extension UIView {
 }
 
 extension UIView {
-    func shake() {
+    public func shake() {
         let animation = CABasicAnimation(keyPath: "position")
         animation.duration = 0.07
         animation.repeatCount = 3
@@ -149,7 +102,7 @@ extension UIView {
 }
 
 extension UIView {
-    func clearConstraints() {
+    public func clearConstraints() {
         for subview in self.subviews {
             subview.clearConstraints()
         }
@@ -158,11 +111,11 @@ extension UIView {
 }
 
 extension UIView {
-    func rotate(degrees: CGFloat) {
+    public func rotate(degrees: CGFloat) {
         rotate(radians: CGFloat.pi * degrees / 180.0)
     }
     
-    func rotate(radians: CGFloat) {
+    public func rotate(radians: CGFloat) {
         self.transform = CGAffineTransform(rotationAngle: radians)
     }
 }

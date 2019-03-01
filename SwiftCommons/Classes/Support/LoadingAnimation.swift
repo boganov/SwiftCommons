@@ -34,6 +34,25 @@ struct LoadingAnimationType: RawRepresentable {
     static let system = LoadingAnimationType(rawValue: "System")
 }
 
+// Extend type struct/enum
+/*
+extension LoadingAnimationType {
+    static var newAnimation: LoadingAnimationType {
+        return LoadingAnimationType(rawValue: "NewAnimation")
+    }
+}
+ */
+// And extension function for view. Must have name same as struct var + View at the end
+/*
+
+extension LoadingAnimation {
+    @objc private func newAnimationView() -> UIView {
+        // your animation view here
+        return UIView()
+    }
+}
+ */
+
 class LoadingAnimation: NSObject {
     
     // MARK: - Properties

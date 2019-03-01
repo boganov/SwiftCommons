@@ -28,7 +28,7 @@ import UIKit
 // MARK: - RGB & RGBA inits
 
 extension UIColor {
-    convenience init(red: UInt32, green: UInt32, blue: UInt32, alpha: UInt32 = 255) {
+    public convenience init(red: UInt32, green: UInt32, blue: UInt32, alpha: UInt32 = 255) {
         assert(red >= 0 && red <= 255, "Invalid red component")
         assert(green >= 0 && green <= 255, "Invalid green component")
         assert(blue >= 0 && blue <= 255, "Invalid blue component")
@@ -37,7 +37,7 @@ extension UIColor {
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: CGFloat(alpha) / 255.0)
     }
     
-    convenience init(rgba: UInt32) {
+    public convenience init(rgba: UInt32) {
         self.init(
             red: (rgba >> 24) & 0xFF,
             green: (rgba >> 16) & 0xFF,
@@ -46,7 +46,7 @@ extension UIColor {
         )
     }
     
-    convenience init(rgb: UInt32) {
+    public convenience init(rgb: UInt32) {
         self.init(
             red: (rgb >> 16) & 0xFF,
             green: (rgb >> 8) & 0xFF,
@@ -54,7 +54,7 @@ extension UIColor {
         )
     }
     
-    convenience init(hex: String) {
+    public convenience init(hex: String) {
         var uppercasedString = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         
         if uppercasedString.hasPrefix("#") {
@@ -73,7 +73,7 @@ extension UIColor {
 }
 
 extension UIColor {
-    var isLight: Bool {
+    public var isLight: Bool {
         let ci = CIColor(color: self)
         let luminance = 0.299 * ci.red + 0.587 * ci.green + 0.114 * ci.blue
         return luminance > 0.5
