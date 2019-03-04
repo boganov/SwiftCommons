@@ -1,5 +1,5 @@
 PODS:
-  - SwiftCommons (0.1.0)
+  - SwiftCommons (0.1.2)
 
 DEPENDENCIES:
   - SwiftCommons (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftCommons: f9127e4c0d1d25b073c0d85cb5ddae7e12201c42
+  SwiftCommons: bd9d86dc2c35f50132cad1e8884a6dbe959262bc
 
 PODFILE CHECKSUM: 98ea7bdc7f1b57844840af393e922951e28c3a00
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

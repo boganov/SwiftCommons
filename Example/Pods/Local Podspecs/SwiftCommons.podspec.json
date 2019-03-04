@@ -1,6 +1,6 @@
 {
   "name": "SwiftCommons",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "This is a project to keep all files that are useful when you start creating a new application.",
   "description": "Nothing to write here actually. Summary says it all: it is just a project to keep all files that are useful when you start creating a new application.",
   "homepage": "https://github.com/boganov/SwiftCommons",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/boganov/SwiftCommons.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "social_media_url": "https://twitter.com/boganov",
   "swift_version": "4.2",
   "platforms": {
-    "ios": "9.3"
+    "ios": "9.0"
   },
   "source_files": "SwiftCommons/Classes/**/*",
   "resources": "SwiftCommons/Assets/*"

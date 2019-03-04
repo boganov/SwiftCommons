@@ -175,7 +175,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCommons_Tests/Pods-SwiftCommons_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftCommons_Tests/Pods-SwiftCommons_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftCommons/SwiftCommons.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -186,7 +186,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCommons_Tests/Pods-SwiftCommons_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftCommons_Tests/Pods-SwiftCommons_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7FF355A5E58CD8061CBBF6A /* [CP] Check Pods Manifest.lock */ = {
