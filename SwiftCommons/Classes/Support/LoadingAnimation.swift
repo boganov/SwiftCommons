@@ -29,8 +29,11 @@ enum LoadingAnimationPosition: String {
     case center
 }
 
-struct LoadingAnimationType: RawRepresentable {
-    var rawValue: String
+public struct LoadingAnimationType: RawRepresentable {
+    public init(rawValue: String) {
+        self.rawValue = rawValue
+    }
+    public var rawValue: String
     static let system = LoadingAnimationType(rawValue: "System")
 }
 
@@ -53,7 +56,7 @@ extension LoadingAnimation {
 }
  */
 
-class LoadingAnimation: NSObject {
+public class LoadingAnimation: NSObject {
     
     // MARK: - Properties
     

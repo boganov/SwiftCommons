@@ -26,7 +26,7 @@
 import UIKit
 
 @IBDesignable
-class CustomBackButton: UIBarButtonItem {
+public class CustomBackButton: UIBarButtonItem {
     
     override init() {
         super.init()
