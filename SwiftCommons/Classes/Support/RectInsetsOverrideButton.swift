@@ -27,8 +27,8 @@ import UIKit
 
 public class RectInsetsOverrideButton: UIButton {
     
-    var alignmentRectInsetsOverride: UIEdgeInsets?
-    public override var alignmentRectInsets: UIEdgeInsets {
+    public var alignmentRectInsetsOverride: UIEdgeInsets?
+    override public var alignmentRectInsets: UIEdgeInsets {
         return alignmentRectInsetsOverride ?? super.alignmentRectInsets
     }
     
