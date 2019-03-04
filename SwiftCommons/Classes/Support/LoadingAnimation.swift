@@ -25,7 +25,7 @@
 
 import UIKit
 
-enum LoadingAnimationPosition: String {
+public enum LoadingAnimationPosition: String {
     case center
 }
 
@@ -34,7 +34,7 @@ public struct LoadingAnimationType: RawRepresentable {
         self.rawValue = rawValue
     }
     public var rawValue: String
-    static let system = LoadingAnimationType(rawValue: "System")
+    public static let system = LoadingAnimationType(rawValue: "System")
 }
 
 // Extend type struct/enum
@@ -60,7 +60,7 @@ public class LoadingAnimation: NSObject {
     
     // MARK: - Properties
     
-    static let shared = LoadingAnimation()
+    public static let shared = LoadingAnimation()
     
     private var animation: UIView?
     
@@ -68,7 +68,7 @@ public class LoadingAnimation: NSObject {
     
     // MARK: - Methods
     
-    func show(at position: LoadingAnimationPosition, type: LoadingAnimationType = .system) {
+    public func show(at position: LoadingAnimationPosition, type: LoadingAnimationType = .system) {
         hide()
         let window = UIApplication.shared.keyWindow!
         var point = CGPoint()
@@ -80,7 +80,7 @@ public class LoadingAnimation: NSObject {
         show(at: point, type: type)
     }
     
-    func show(at point: CGPoint, type: LoadingAnimationType = .system) {
+    public func show(at point: CGPoint, type: LoadingAnimationType = .system) {
         if let view = self.getViewTypeType(type) {
             view.center = point
             let window = UIApplication.shared.keyWindow!
@@ -89,11 +89,11 @@ public class LoadingAnimation: NSObject {
         }
     }
     
-    func pause() {
+    public func pause() {
         
     }
     
-    func hide() {
+    public func hide() {
         if let animation = self.animation {
             animation.removeFromSuperview()
         }

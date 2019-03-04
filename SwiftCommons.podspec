@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'SwiftCommons'
-    s.version          = '0.1.3'
+    s.version          = '0.1.4'
     s.summary          = 'This is a project to keep all files that are useful when you start creating a new application.'
     s.description      = <<-DESC
     Nothing to write here actually. Summary says it all: it is just a project to keep all files that are useful when you start creating a new application.

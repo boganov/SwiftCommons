@@ -33,7 +33,7 @@ public class CustomBackButton: UIBarButtonItem {
         prepare()
     }
     
-    init(customAction: (() -> Void)? = nil, customImage: UIImage? = nil, customColor: UIColor? = nil) {
+    public init(customAction: (() -> Void)? = nil, customImage: UIImage? = nil, customColor: UIColor? = nil) {
         self.customAction = customAction
         self.customImage = customImage
         self.customColor = customColor
@@ -49,14 +49,14 @@ public class CustomBackButton: UIBarButtonItem {
     // MARK: - Properties
     
     @objc var customAction: (() -> Void)?
-    var customImage: UIImage?
-    var customColor: UIColor?
+    public var customImage: UIImage?
+    public var customColor: UIColor?
     
     // MARK: - Overrides
     
     // MARK: - Methods
     
-    func prepare() {
+    public func prepare() {
         let button = RectInsetsOverrideButton(type: .system)
         let image = customImage ?? UIImage(named: "sc_nav_back")
         button.setImage(image?.withRenderingMode(.alwaysTemplate), for: .normal)
@@ -70,7 +70,7 @@ public class CustomBackButton: UIBarButtonItem {
         self.customView = button
     }
     
-    @objc func buttonPressed() {
+    @objc public func buttonPressed() {
         if let customAction = customAction {
             customAction()
         } else {
